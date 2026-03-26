@@ -25,9 +25,9 @@ search: true
 
 
 author:
-  name   : "First Lastname"
+  name   : "Daniel Birmajer"
   avatar : "/assets/images/bio-photo.jpg"
-  bio    : "My awesome biography constrained to a sentence or two goes here."
+  bio    : "Professor of Mathematics"
   links:
     - label: "✉ Email"
       icon: "fab"
@@ -38,7 +38,7 @@ author:
 
 footer:
   links:
-    - label: "Email"
+    - label: "abirmaj6@naz.edu"
       icon: "fab fa-fw fa-envelope"
       url: !join ["mailto:", *EMAIL]
     - label: "GitHub"
