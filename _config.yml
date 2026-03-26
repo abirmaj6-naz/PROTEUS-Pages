@@ -43,7 +43,7 @@ footer:
       url: !join ["mailto:abirmaj6@naz.edu", *EMAIL]
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: !join ["https://github.com/abirmaj6-naz", *GITHUB]
+      url: !join ["https://github.com/", *GITHUB]
 
 # Build settings
 markdown: kramdown
