@@ -31,16 +31,16 @@ author:
   links:
     - label: "✉ Email"
       icon: "fab"
-      url: !join ["mailto:", abirmaj6@naz.edu]
+      url: !join ["mailto:abirmaj6@naz.edu", *EMAIL]
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: !join ["https://github.com/abirmaj6-naz", *GITHUB]
 
 footer:
   links:
-    - label: "abirmaj6@naz.edu"
+    - label: "abirmaj6@naz.edu" 
       icon: "fab fa-fw fa-envelope"
-      url: !join ["mailto:", *EMAIL]
+      url: !join ["mailto:abirmaj6@naz.edu", *EMAIL]
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: !join ["https://github.com/abirmaj6-naz", *GITHUB]
