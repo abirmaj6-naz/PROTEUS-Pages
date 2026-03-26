@@ -31,7 +31,7 @@ author:
   links:
     - label: "✉ Email"
       icon: "fab"
-      url: !join ["mailto:abirmaj6@naz.edu", *EMAIL]
+      url: !join ["mailto:", *EMAIL]
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: !join ["https://github.com/", *GITHUB]
@@ -40,7 +40,7 @@ footer:
   links:
     - label: "abirmaj6@naz.edu" 
       icon: "fab fa-fw fa-envelope"
-      url: !join ["mailto:abirmaj6@naz.edu", *EMAIL]
+      url: !join ["mailto:", *EMAIL]
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: !join ["https://github.com/", *GITHUB]
