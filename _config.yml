@@ -34,7 +34,7 @@ author:
       url: !join ["mailto:", abirmaj6@naz.edu]
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: !join ["https://github.com/", *GITHUB]
+      url: !join ["https://github.com/abirmaj6-naz", *GITHUB]
 
 footer:
   links:
@@ -43,7 +43,7 @@ footer:
       url: !join ["mailto:", *EMAIL]
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: !join ["https://github.com/", *GITHUB]
+      url: !join ["https://github.com/abirmaj6-naz", *GITHUB]
 
 # Build settings
 markdown: kramdown
