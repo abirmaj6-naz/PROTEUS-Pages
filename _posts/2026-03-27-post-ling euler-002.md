@@ -17,7 +17,7 @@ link: https://projecteuler.net/problem=2
 
 The Fibonacci sequence is defined by the recurrence `F(n) = F(n−1) + F(n−2)` with seeds `F(0) = 0, F(1) = 1`.
 
-A beautiful observation: **every third Fibonacci number is even**. This follows from the parity pattern of the sequence — `odd, even, odd, odd, even, odd, odd, even, …` — which repeats with period 3. So rather than checking each term for evenness, we could jump three steps at a time using the identity `F(n+3) = 4·F(n) + F(n−3)`. Our solution below takes the simpler filtering approach, which is perfectly readable and fast enough for this limit.
+A beautiful observation: **every third Fibonacci number is even**. This follows from the parity pattern of the sequence — `even, odd, odd, even, odd, odd, even, …` — which repeats with period 3. So rather than checking each term for evenness, we could jump three steps at a time using the identity `F(n+3) = 4·F(n) + F(n−3)`. Our solution below takes the simpler filtering approach, which is perfectly readable and fast enough for this limit.
 
 ## The Python Solution
 
