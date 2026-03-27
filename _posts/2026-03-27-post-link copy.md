@@ -33,7 +33,7 @@ S(3, 1_000) + S(5, 1_000) - S(15, 1_000)
 
 > 233168
 ```
-The answer is then `S(3, 1000) + S(5, 1000) − S(15, 1000)` — we subtract multiples of 15 because they were counted twice (once as multiples of 3, once as multiples of 5). This runs in **O(1)** time regardless of `n`.
+The answer is then `S(3, 1,000) + S(5, 1,000) − S(15, 1,000)` — we subtract multiples of 15 because they were counted twice (once as multiples of 3, once as multiples of 5). This runs in **O(1)** time regardless of `n`.
 
 ## The Python Solution
 
@@ -48,6 +48,6 @@ print(sum(x for x in range(1_000) if (x % 3) * (x % 5) == 0))  # 233168
 
 The condition `(x % 3) * (x % 5) == 0` exploits the **zero-product property**: a product of integers is zero if and only if at least one factor is zero. So the expression is `True` whenever `x % 3 == 0` *or* `x % 5 == 0` — exactly our condition — without needing the `or` keyword.
 
-Compared to the O(1) formula this is **O(n)**, but for `n = 1000` the difference is imperceptible. Python's generator expression also avoids materialising a list in memory; it streams values one by one into `sum()`.
+Compared to the O(1) formula this is **O(n)**, but for `n = 1,000` the difference is imperceptible. Python's generator expression also avoids materialising a list in memory; it streams values one by one into `sum()`.
 
 **Answer (n = 1000): 233168**
