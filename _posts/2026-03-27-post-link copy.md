@@ -40,10 +40,8 @@ The answer is then `S(3, 1000) + S(5, 1000) − S(15, 1000)` — we subtract mul
 The one-liner below takes a more direct, Pythonic approach using a generator expression inside `sum()`:
 
 ```python
-# n = 1000  →  "below 1000" means range(1000)
-n = 1000
-answer = sum(x for x in range(n) if (x % 3) * (x % 5) == 0)
-print(answer)  # 233168
+# "below 1000" means range(1000)
+print(sum(x for x in range(1_000) if (x % 3) * (x % 5) == 0))  # 233168
 ```
 
 ## Why the Trick Works
