@@ -89,7 +89,7 @@ print(answer(4_000_000))  # 4613732
 
 ## Generator Functions in Python
 
-The `yield` keyword transforms `fib_up_to` into a **generator function**. Instead of computing the entire sequence and returning a list, it produces one value at a time — resuming where it left off each time the caller asks for the next item. Memory usage is **O(1)** regardless of how large `limit` gets.
+The `yield` keyword transforms `fibonacci` into a **generator function**. Instead of computing the entire sequence and returning a list, it produces one value at a time — resuming where it left off each time the caller asks for the next item. Memory usage is **O(1)** regardless of how large `limit` gets.
 
 The tuple-swap `a, b = b, a + b` is idiomatic Python: the right-hand side is fully evaluated before any assignment occurs, so no temporary variable is needed — the Fibonacci step is atomic.
 
