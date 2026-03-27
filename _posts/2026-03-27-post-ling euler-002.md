@@ -61,9 +61,10 @@ def fibonacci(a: int = 0, b: int = 1) -> Generator[int, None, None]:
         yield a
         a, b = b, a + b
 
+
 def answer(limit: int) -> int:
     """
-    Return the sum of even-valued Fibonacci numbers not exceeding limit.
+    Return the sum of even-valued Fibonacci numbers not exceeding n.
 
     This function solves Project Euler problem 2 by generating Fibonacci numbers
     and summing only the even-valued ones that are less than or equal to 4,000,000.
@@ -78,9 +79,10 @@ def answer(limit: int) -> int:
     >>> answer(4_000_000)
     4613732
     """
-    return sum(x for x in takewhile(lambda x: x <= n, fibonacci())
-               if x % 2 == 0)
-
+    return sum(
+        x for x in takewhile(lambda x: x <= limit, fibonacci())
+        if x % 2 == 0
+        )
 
 print(answer(4_000_000))  # 4613732
 ```
