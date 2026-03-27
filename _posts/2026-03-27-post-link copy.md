@@ -40,13 +40,13 @@ The answer is then `S(3, 1,000) + S(5, 1,000) − S(15, 1,000)` — we subtract 
 The one-liner below takes a more direct, Pythonic approach using a generator expression inside `sum()`:
 
 ```python
-# "below 1_000" means range(1_000)
 def answer(n: int) -> int:
   return sum(
-      x for x in range(1_000) 
+      x for x in range(n) 
       if (x % 3) * (x % 5) == 0
       )
  
+# "below 1_000" means range(1_000)
 print(answer(1_000))  # 233168
 ```
 
