@@ -19,6 +19,8 @@ We want every integer `x` in the range `[1, 999]` such that `3 | x` or `5 | x` (
 
 The elegant closed-form approach uses the **inclusion–exclusion principle**. Define `S(k, n)` as the sum of all multiples of `k` strictly below `n`. Since these form an arithmetic series `k, 2k, 3k, …` with `p = ⌊(n−1)/k⌋` terms:
 
+## The Sage Solution
+
 ```
 S(k, n) = k · p · (p + 1) / 2
 ```
