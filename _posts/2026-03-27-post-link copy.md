@@ -21,10 +21,10 @@ The elegant closed-form approach uses the **inclusion–exclusion principle**. D
 
 ## The Sage Solution
 
-```
-S(k, n) = k · p · (p + 1) / 2
-```
-```sage
+```python
+
+# S(k, n) = k · p · (p + 1) / 2
+
 def S(k, n):
     p = (n-1) // k
     return k * p * (p + 1) / 2
