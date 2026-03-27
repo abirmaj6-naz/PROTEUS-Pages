@@ -22,7 +22,15 @@ The elegant closed-form approach uses the **inclusion–exclusion principle**. D
 ```
 S(k, n) = k · p · (p + 1) / 2
 ```
+```sage
+def S(k, n):
+    p = (n-1) // k
+    return k * p * (p + 1) / 2
 
+S(3, 1_000) + S(5, 1_000) - S(15, 1_000)
+
+> 233168
+```
 The answer is then `S(3, 1000) + S(5, 1000) − S(15, 1000)` — we subtract multiples of 15 because they were counted twice (once as multiples of 3, once as multiples of 5). This runs in **O(1)** time regardless of `n`.
 
 ## The Python Solution
