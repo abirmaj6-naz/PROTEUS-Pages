@@ -43,9 +43,10 @@ The one-liner below takes a more direct, Pythonic approach using a generator exp
 # "below 1_000" means range(1_000)
 def answer(n: int) -> int:
   return sum(
-    x for x in range(1_000) 
-    if (x % 3) * (x % 5) == 0
-    )
+      x for x in range(1_000) 
+      if (x % 3) * (x % 5) == 0
+      )
+ 
 print(answer(1_000))  # 233168
 ```
 
