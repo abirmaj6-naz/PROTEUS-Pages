@@ -33,12 +33,6 @@ This module contains functions to find the largest prime factor of a number.
 It includes utilities for finding the smallest divisor and generating prime factors.
 """
 
-# This is a sample Python script.
-
-# Press ⌃R to execute it or replace it with your code.
-# Press Double ⇧ to search everywhere for classes, files, tool windows, actions, and settings.
-
-# from time import time
 from typing import Iterator
 from math import (ceil, sqrt)
 
