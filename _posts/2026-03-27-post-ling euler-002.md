@@ -23,10 +23,10 @@ A beautiful observation: **every third Fibonacci number is even**. This follows 
 
 ```python
 
-from typing import Generator
+from typing import Iterator
 from itertools import takewhile
 
-def fibonacci(a: int = 0, b: int = 1) -> Generator[int, None, None]:
+def fibonacci(a: int = 0, b: int = 1) -> Iterator[int]:
     """
     Generate an infinite Fibonacci sequence.
 
@@ -42,7 +42,7 @@ def fibonacci(a: int = 0, b: int = 1) -> Generator[int, None, None]:
 
     Yields
     ------
-    Generator[int, None, None]
+    Iterator[int]
         An infinite generator of Fibonacci numbers.
 
     Examples
